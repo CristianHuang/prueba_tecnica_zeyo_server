@@ -1,0 +1,20 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "node --watch app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "Business Process Server",
+  "dependencies": {
+    "cors": "^2.8.6",
+    "dotenv": "^16.4.1",
+    "express": "^5.2.1",
+    "pg": "^8.20.0"
+  }
+}
