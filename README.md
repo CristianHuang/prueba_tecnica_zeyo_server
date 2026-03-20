@@ -1,6 +1,4 @@
-# Business Process Traceability - Server
-
-Backend en Node.js para la gestión de un catálogo de pasos de procesos de negocio con trazabilidad simulada mediante hashes encadenados (Blockchain).
+# Business Process - Server
 
 ## Requisitos Previos
 
@@ -10,10 +8,10 @@ Backend en Node.js para la gestión de un catálogo de pasos de procesos de nego
 
 ## Configuración de la Base de Datos
 
-1. Crea una base de datos llamada `trace_db`.
+1. Crea una base de datos.
 2. Ejecuta el archivo `schema.sql` para crear las tablas necesarias:
    ```bash
-   psql -U tu_usuario -d trace_db -f schema.sql
+   psql -U tu_usuario -d nombre_db -f schema.sql
    ```
 
 ## Instalación
@@ -26,12 +24,12 @@ Backend en Node.js para la gestión de un catálogo de pasos de procesos de nego
 
 ## Configuración de Variables de Entorno
 
-Crea un archivo `.env` en la raíz de la carpeta `/server` (toma como referencia el archivo `.env` existente):
+Crea un archivo `.env` en la raíz de la carpeta `/server`:
 
 ```env
 DB_USER=tu_usuario
 DB_HOST=localhost
-DB_DATABASE=trace_db
+DB_DATABASE=nombre_db
 DB_PASSWORD=tu_password
 DB_PORT=5432
 PORT=3000
